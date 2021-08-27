@@ -14,6 +14,12 @@
 		7101889D26D32248004D00A3 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7101889C26D32248004D00A3 /* Persistence.swift */; };
 		710188A026D32248004D00A3 /* Bookshelf.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7101889E26D32248004D00A3 /* Bookshelf.xcdatamodeld */; };
 		710188A826D3234E004D00A3 /* AppTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710188A726D3234E004D00A3 /* AppTabView.swift */; };
+		714EF6B426D984AD00009D0B /* VMPlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714EF6B326D984AD00009D0B /* VMPlaceholder.swift */; };
+		714EF6B626D984B700009D0B /* ManPlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714EF6B526D984B700009D0B /* ManPlaceholder.swift */; };
+		714EF6B826D984BE00009D0B /* ExtPlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714EF6B726D984BE00009D0B /* ExtPlaceholder.swift */; };
+		714EF6BA26D984C500009D0B /* ModelPlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714EF6B926D984C500009D0B /* ModelPlaceholder.swift */; };
+		714EF6BC26D984D300009D0B /* BookListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714EF6BB26D984D300009D0B /* BookListView.swift */; };
+		714EF6BE26D984DC00009D0B /* PlaceholderCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714EF6BD26D984DC00009D0B /* PlaceholderCustom.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,12 @@
 		7101889F26D32248004D00A3 /* Bookshelf.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Bookshelf.xcdatamodel; sourceTree = "<group>"; };
 		710188A126D32248004D00A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		710188A726D3234E004D00A3 /* AppTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabView.swift; sourceTree = "<group>"; };
+		714EF6B326D984AD00009D0B /* VMPlaceholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMPlaceholder.swift; sourceTree = "<group>"; };
+		714EF6B526D984B700009D0B /* ManPlaceholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManPlaceholder.swift; sourceTree = "<group>"; };
+		714EF6B726D984BE00009D0B /* ExtPlaceholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtPlaceholder.swift; sourceTree = "<group>"; };
+		714EF6B926D984C500009D0B /* ModelPlaceholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelPlaceholder.swift; sourceTree = "<group>"; };
+		714EF6BB26D984D300009D0B /* BookListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListView.swift; sourceTree = "<group>"; };
+		714EF6BD26D984DC00009D0B /* PlaceholderCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderCustom.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +70,14 @@
 		7101889226D32241004D00A3 /* Bookshelf */ = {
 			isa = PBXGroup;
 			children = (
-				7101889326D32241004D00A3 /* BookshelfApp.swift */,
+				714EF6B226D9846F00009D0B /* View Model */,
+				714EF6B126D9844A00009D0B /* Resources */,
+				714EF6B026D9843F00009D0B /* Manager */,
+				714EF6AF26D983F500009D0B /* Helper and Extensions */,
+				714EF6AE26D983EE00009D0B /* Model */,
+				714EF6AB26D983D800009D0B /* Views */,
 				7101889526D32241004D00A3 /* ContentView.swift */,
-				7101889726D32248004D00A3 /* Assets.xcassets */,
 				7101889C26D32248004D00A3 /* Persistence.swift */,
-				710188A126D32248004D00A3 /* Info.plist */,
 				7101889E26D32248004D00A3 /* Bookshelf.xcdatamodeld */,
 				7101889926D32248004D00A3 /* Preview Content */,
 				710188A726D3234E004D00A3 /* AppTabView.swift */,
@@ -76,6 +91,73 @@
 				7101889A26D32248004D00A3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		714EF6AB26D983D800009D0B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				714EF6AC26D983DE00009D0B /* Screens */,
+				714EF6AD26D983E400009D0B /* Custom Views */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		714EF6AC26D983DE00009D0B /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				714EF6BB26D984D300009D0B /* BookListView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		714EF6AD26D983E400009D0B /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				714EF6BD26D984DC00009D0B /* PlaceholderCustom.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		714EF6AE26D983EE00009D0B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				714EF6B926D984C500009D0B /* ModelPlaceholder.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		714EF6AF26D983F500009D0B /* Helper and Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				714EF6B726D984BE00009D0B /* ExtPlaceholder.swift */,
+			);
+			path = "Helper and Extensions";
+			sourceTree = "<group>";
+		};
+		714EF6B026D9843F00009D0B /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				714EF6B526D984B700009D0B /* ManPlaceholder.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		714EF6B126D9844A00009D0B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7101889326D32241004D00A3 /* BookshelfApp.swift */,
+				7101889726D32248004D00A3 /* Assets.xcassets */,
+				710188A126D32248004D00A3 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		714EF6B226D9846F00009D0B /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				714EF6B326D984AD00009D0B /* VMPlaceholder.swift */,
+			);
+			path = "View Model";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,10 +229,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				714EF6B426D984AD00009D0B /* VMPlaceholder.swift in Sources */,
 				7101889D26D32248004D00A3 /* Persistence.swift in Sources */,
+				714EF6B626D984B700009D0B /* ManPlaceholder.swift in Sources */,
+				714EF6B826D984BE00009D0B /* ExtPlaceholder.swift in Sources */,
 				7101889626D32241004D00A3 /* ContentView.swift in Sources */,
 				7101889426D32241004D00A3 /* BookshelfApp.swift in Sources */,
+				714EF6BA26D984C500009D0B /* ModelPlaceholder.swift in Sources */,
+				714EF6BC26D984D300009D0B /* BookListView.swift in Sources */,
 				710188A026D32248004D00A3 /* Bookshelf.xcdatamodeld in Sources */,
+				714EF6BE26D984DC00009D0B /* PlaceholderCustom.swift in Sources */,
 				710188A826D3234E004D00A3 /* AppTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,7 +371,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Bookshelf/Preview Content\"";
 				DEVELOPMENT_TEAM = UF94N945G8;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Bookshelf/Info.plist;
+				INFOPLIST_FILE = Bookshelf/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -305,7 +393,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Bookshelf/Preview Content\"";
 				DEVELOPMENT_TEAM = UF94N945G8;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Bookshelf/Info.plist;
+				INFOPLIST_FILE = Bookshelf/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
