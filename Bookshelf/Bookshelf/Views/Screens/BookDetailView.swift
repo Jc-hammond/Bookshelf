@@ -10,6 +10,8 @@ import SwiftUI
 struct BookDetailView: View {
     var body: some View {
         VStack {
+            SheetButtons()
+            
             Image("bookPlaceholder")
                 .resizable()
                 .frame(width: 150, height: 180)
@@ -18,10 +20,13 @@ struct BookDetailView: View {
                 Text("Harry Potter and The Sorcer's Stone")
                     .font(.title2)
                     .fontWeight(.semibold)
+                    .foregroundColor(.primary)
+                    .multilineTextAlignment(.center)
+                    .padding(6)
                 
                 Text("Book Author")
-                    .font(.title3)
-                    .padding(.bottom)
+                    .fontWeight(.medium)
+                    .foregroundColor(.secondary)
                     
                 ZStack {
                     Rectangle()
@@ -38,22 +43,20 @@ struct BookDetailView: View {
                     }
                 }
                 VStack {
-                    Text("Description:")
                     Text("This is a book description explaining the plot, character introduction, and overview of what this book is about.")
-                    
+                        .fontWeight(.semibold)
+                        .font(.system(size: 14))
+                        .padding()
+                    //JCH- This spacer may ruin the layout based on the length of the book description. revisit in testing
+                    Spacer()
                     Button {
-                        //JCH- Link to book site on google.com
+                        //JCH- add link to website
                     } label: {
-                        Text("View Online")
-                            .fontWeight(.semibold)
-                            .foregroundColor(.white)
-                            .padding(20)
-                            .background(Rectangle().fill(Color.appPrimary).cornerRadius(14))
+                        BSButton(title: "View Online")
                     }
                 }
             }
         }
-        .frame(width: 305, height: 621)
     }
 }
 
@@ -75,11 +78,36 @@ struct DetailButton: View {
             VStack(spacing: 2) {
                 Text(buttonImage)
                 Text(buttonTitle)
-                    .lineLimit(2)
+                    .lineLimit(1)
                     .foregroundColor(.white)
                     .font(.system(size: 10))
             }
         }
         .frame(width: 40, height: 40)
+    }
+}
+
+struct SheetButtons: View {
+    var body: some View {
+        HStack {
+            Button {
+                //JCH- Dismiss sheet
+            } label: {
+                Image(systemName: "chevron.left")
+                    .frame(width: 10, height: 10)
+                    .padding()
+            }
+            Spacer()
+            
+            Button {
+                //JCH- add favoriting functionality
+                //JCH- Switch .fill based on favorite status
+            } label: {
+                Image(systemName: "star.circle")
+                    .resizable()
+                    .frame(width: 20, height: 20)
+                    .padding()
+            }
+        }
     }
 }
