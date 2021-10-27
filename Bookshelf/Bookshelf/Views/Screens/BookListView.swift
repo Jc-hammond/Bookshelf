@@ -8,13 +8,33 @@
 import SwiftUI
 
 struct BookListView: View {
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            List {
+                BookCell()
+                BookCell()
+                BookCell()
+            }
+        }
     }
 }
 
 struct BookListView_Previews: PreviewProvider {
     static var previews: some View {
         BookListView()
+    }
+}
+
+struct BookCell: View {
+    var body: some View {
+        HStack{
+            Image(systemName: "book")
+                .foregroundColor(.blue)
+            VStack {
+                Text("Book Title")
+                Text("Book Description")
+            }
+        }
     }
 }

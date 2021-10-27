@@ -5,4 +5,15 @@
 //  Created by Connor Hammond on 8/27/21.
 //
 
-import Foundation
+import SwiftUI
+
+//class BooksViewModel: ObservableObject {
+//    
+//    @Published var books: [BookItem]
+//    
+//    
+//}
+//
+//struct BookItem {
+//    
+//}

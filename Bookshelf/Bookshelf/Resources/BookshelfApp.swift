@@ -13,7 +13,7 @@ struct BookshelfApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+           AppTabView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }

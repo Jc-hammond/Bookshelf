@@ -14,6 +14,8 @@
 		7101889D26D32248004D00A3 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7101889C26D32248004D00A3 /* Persistence.swift */; };
 		710188A026D32248004D00A3 /* Bookshelf.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7101889E26D32248004D00A3 /* Bookshelf.xcdatamodeld */; };
 		710188A826D3234E004D00A3 /* AppTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710188A726D3234E004D00A3 /* AppTabView.swift */; };
+		71316EBC2729EBB3002FFAD5 /* CategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71316EBB2729EBB3002FFAD5 /* CategoriesView.swift */; };
+		71316EBE2729EBF5002FFAD5 /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71316EBD2729EBF5002FFAD5 /* ScannerView.swift */; };
 		714EF6B426D984AD00009D0B /* VMPlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714EF6B326D984AD00009D0B /* VMPlaceholder.swift */; };
 		714EF6B626D984B700009D0B /* ManPlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714EF6B526D984B700009D0B /* ManPlaceholder.swift */; };
 		714EF6B826D984BE00009D0B /* ExtPlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714EF6B726D984BE00009D0B /* ExtPlaceholder.swift */; };
@@ -32,6 +34,8 @@
 		7101889F26D32248004D00A3 /* Bookshelf.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Bookshelf.xcdatamodel; sourceTree = "<group>"; };
 		710188A126D32248004D00A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		710188A726D3234E004D00A3 /* AppTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabView.swift; sourceTree = "<group>"; };
+		71316EBB2729EBB3002FFAD5 /* CategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesView.swift; sourceTree = "<group>"; };
+		71316EBD2729EBF5002FFAD5 /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
 		714EF6B326D984AD00009D0B /* VMPlaceholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMPlaceholder.swift; sourceTree = "<group>"; };
 		714EF6B526D984B700009D0B /* ManPlaceholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManPlaceholder.swift; sourceTree = "<group>"; };
 		714EF6B726D984BE00009D0B /* ExtPlaceholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtPlaceholder.swift; sourceTree = "<group>"; };
@@ -80,7 +84,6 @@
 				7101889C26D32248004D00A3 /* Persistence.swift */,
 				7101889E26D32248004D00A3 /* Bookshelf.xcdatamodeld */,
 				7101889926D32248004D00A3 /* Preview Content */,
-				710188A726D3234E004D00A3 /* AppTabView.swift */,
 			);
 			path = Bookshelf;
 			sourceTree = "<group>";
@@ -96,6 +99,7 @@
 		714EF6AB26D983D800009D0B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				710188A726D3234E004D00A3 /* AppTabView.swift */,
 				714EF6AC26D983DE00009D0B /* Screens */,
 				714EF6AD26D983E400009D0B /* Custom Views */,
 			);
@@ -106,6 +110,8 @@
 			isa = PBXGroup;
 			children = (
 				714EF6BB26D984D300009D0B /* BookListView.swift */,
+				71316EBB2729EBB3002FFAD5 /* CategoriesView.swift */,
+				71316EBD2729EBF5002FFAD5 /* ScannerView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -233,10 +239,12 @@
 				7101889D26D32248004D00A3 /* Persistence.swift in Sources */,
 				714EF6B626D984B700009D0B /* ManPlaceholder.swift in Sources */,
 				714EF6B826D984BE00009D0B /* ExtPlaceholder.swift in Sources */,
+				71316EBE2729EBF5002FFAD5 /* ScannerView.swift in Sources */,
 				7101889626D32241004D00A3 /* ContentView.swift in Sources */,
 				7101889426D32241004D00A3 /* BookshelfApp.swift in Sources */,
 				714EF6BA26D984C500009D0B /* ModelPlaceholder.swift in Sources */,
 				714EF6BC26D984D300009D0B /* BookListView.swift in Sources */,
+				71316EBC2729EBB3002FFAD5 /* CategoriesView.swift in Sources */,
 				710188A026D32248004D00A3 /* Bookshelf.xcdatamodeld in Sources */,
 				714EF6BE26D984DC00009D0B /* PlaceholderCustom.swift in Sources */,
 				710188A826D3234E004D00A3 /* AppTabView.swift in Sources */,
