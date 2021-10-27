@@ -9,12 +9,23 @@ import SwiftUI
 
 struct BookListView: View {
     
+    @State private var searchText = ""
+    
     var body: some View {
         VStack {
-            List {
-                BookCell()
-                BookCell()
-                BookCell()
+            ZStack {
+                TextField("Search for a book...", text: $searchText)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+            }
+            NavigationView {
+                VStack {
+                    List {
+                        BookCell()
+                        BookCell()
+                        BookCell()
+                    }
+                }
+                .navigationTitle("Books")
             }
         }
     }
@@ -23,18 +34,5 @@ struct BookListView: View {
 struct BookListView_Previews: PreviewProvider {
     static var previews: some View {
         BookListView()
-    }
-}
-
-struct BookCell: View {
-    var body: some View {
-        HStack{
-            Image(systemName: "book")
-                .foregroundColor(.blue)
-            VStack {
-                Text("Book Title")
-                Text("Book Description")
-            }
-        }
     }
 }
